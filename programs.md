@@ -1,3 +1,4 @@
+# this is fibonaci series
 def fib(n):
     if n==0:
         return 0
@@ -5,6 +6,15 @@ def fib(n):
         return 1
     else:
         return fib(n-1)+fib(n-2)
-m=int(input())
-for i in range(m):
+n=int(input())
+for i in range(n):
     print(fib(i))
+
+'''
+input:5
+output:0
+1
+1
+2
+3
+'''
