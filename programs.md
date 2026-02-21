@@ -18,3 +18,24 @@ output:0
 2
 3
 '''
+
+
+
+# sum of fibonacci series 
+def fibonacci(n):
+    if n == 0:
+        return 0
+    if n==1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+n=int(input())
+sums=0
+for i in range(n):
+    sums+=fibonacci(i)
+print(sums)
+
+'''
+input: 5
+output:7
+'''
