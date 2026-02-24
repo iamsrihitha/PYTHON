@@ -66,7 +66,7 @@ print(largest)
 print("The maximum difference is",largest-smallest)
 
 
-
+# frequency of the numbers and most repeated value
 n=int(input())
 arr=list(map(int,input().split()))
 freq={}
