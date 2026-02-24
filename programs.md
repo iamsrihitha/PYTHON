@@ -39,3 +39,28 @@ print(sums)
 input: 5
 output:7
 '''
+
+
+# three digit number divisible by 9
+n=int(input())
+if 100<= n <= 999:
+    if n%9==0:
+        print("divisible by 9")
+    else:
+        print("not")
+else:
+    print("it is not a three digit number")
+
+# smallest and largest number and their difference
+n=int(input())
+arr=list(map(int,input().split()))
+smallest=arr[0]
+largest=arr[0]
+for i in arr:
+    if smallest>i:
+        smallest=i
+    if largest<i:
+        largest=i
+print(smallest)
+print(largest)
+print("The maximum difference is",largest-smallest)
