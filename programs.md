@@ -79,3 +79,20 @@ for key in freq:
     if freq[key]== max(freq.values()):
         print(key)
     print(key,":",freq[key])
+
+
+
+
+
+# prime numbers series
+def prime(n):
+    if n<=1:
+        return False
+    for i in range(2,n):
+        if n % i == 0:
+            return False
+    return True
+n=int(input())
+for j in range(n+1):
+   if(prime(j)):
+       print(j)
